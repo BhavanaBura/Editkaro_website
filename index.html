@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Editkaro — Social Media Marketing & Video Editing</title>
+  <meta name="description" content="Editkaro: social media marketing & professional video editing for short-form, long-form, gaming, eCommerce ads and more." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="index.html">Editkaro</a>
+      <ul class="nav-links">
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-content">
+        <h1>Scroll-stopping videos & smart social campaigns</h1>
+        <p>Short-form reels, long-form storytelling, gaming edits, eCommerce ads, documentaries and color grading — we do it all.</p>
+        <a class="btn" href="contact.html">Get a Quote</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=000000" alt="Video editing" loading="lazy">
+      </div>
+    </section>
+
+    <!-- Email subscription -->
+    <section class="subscribe container" aria-labelledby="subscribeTitle">
+      <h2 id="subscribeTitle">Join our mailing list</h2>
+      <p>Get tips, samples and offers — delivered to your inbox.</p>
+      <form id="emailForm" class="form-inline">
+        <input type="email" id="email" placeholder="Your email address" required />
+        <input type="hidden" id="emailSource" value="Home Page" />
+        <button type="submit" class="btn">Subscribe</button>
+      </form>
+      <p id="emailMsg" class="status"></p>
+    </section>
+
+    <!-- Services quick -->
+    <section class="services container">
+      <h2>Our Services</h2>
+      <div class="grid services-grid">
+        <div class="card small">
+          <h3>Short-form Videos</h3>
+          <p>Reels, Shorts & TikToks optimized for engagement.</p>
+        </div>
+        <div class="card small">
+          <h3>Long-form Storytelling</h3>
+          <p>YouTube & documentary-style content.</p>
+        </div>
+        <div class="card small">
+          <h3>eCommerce Ads</h3>
+          <p>Conversion-focused product videos.</p>
+        </div>
+        <div class="card small">
+          <h3>Color Grading & VFX</h3>
+          <p>Professional finish & mood creation.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>&copy; <span id="year"></span> Editkaro. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
