@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Editkaro</title>
+  <meta name="description" content="Editkaro portfolio: Short Form, Long Form, Gaming, Football Edits, eCommerce Ads, Documentary, Color Grading, Anime, Ads." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="index.html">Editkaro</a>
+      <ul class="nav-links">
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Portfolio</h1>
+
+    <div class="filters" role="toolbar" aria-label="Video categories">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="Short Form">Short Form</button>
+      <button data-filter="Long Form">Long Form</button>
+      <button data-filter="Gaming">Gaming Videos</button>
+      <button data-filter="Football">Football Edits</button>
+      <button data-filter="eCommerce">eCommerce Ads</button>
+      <button data-filter="Documentary">Documentary</button>
+      <button data-filter="ColorGrading">Color Grading</button>
+      <button data-filter="Anime">Anime Videos</button>
+      <button data-filter="Ads">Ads</button>
+    </div>
+
+    <div id="grid" class="portfolio-grid">
+      <!-- Sample items - replace data-video with your embed/local links -->
+      <div class="card" data-category="Short Form">
+        <a href="#" class="videoThumb" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <img src="https://i.imgur.com/9QO6X3M.jpg" alt="Short form sample" loading="lazy">
+          <div class="label">Short Form — Instagram Reels</div>
+        </a>
+      </div>
+
+      <div class="card" data-category="Long Form">
+        <a href="#" class="videoThumb" data-video="https://www.youtube.com/embed/VIDEO_ID2">
+          <img src="https://i.imgur.com/3G5o6K4.jpg" alt="Long form sample" loading="lazy">
+          <div class="label">Long Form — YouTube</div>
+        </a>
+      </div>
+
+      <div class="card" data-category="Gaming">
+        <a href="#" class="videoThumb" data-video="https://www.youtube.com/embed/VIDEO_ID3">
+          <img src="https://i.imgur.com/8Qqv3fE.jpg" alt="Gaming sample" loading="lazy">
+          <div class="label">Gaming Edit</div>
+        </a>
+      </div>
+
+      <div class="card" data-category="Football">
+        <a href="#" class="videoThumb" data-video="https://www.youtube.com/embed/VIDEO_ID4">
+          <img src="https://i.imgur.com/5Y8V7hB.jpg" alt="Football edit sample" loading="lazy">
+          <div class="label">Football Edits</div>
+        </a>
+      </div>
+
+      <div class="card" data-category="eCommerce">
+        <a href="#" class="videoThumb" data-video="https://www.youtube.com/embed/VIDEO_ID5">
+          <img src="https://i.imgur.com/LpNQX1f.jpg" alt="eCommerce sample" loading="lazy">
+          <div class="label">eCommerce Ad</div>
+        </a>
+      </div>
+
+      <div class="card" data-category="Documentary">
+        <a href="#" class="videoThumb" data-video="https://www.youtube.com/embed/VIDEO_ID6">
+          <img src="https://i.imgur.com/Uz7s8ZL.jpg" alt="Documentary sample" loading="lazy">
+          <div class="label">Documentary</div>
+        </a>
+      </div>
+
+      <div class="card" data-category="ColorGrading">
+        <a href="#" class="videoThumb" data-video="https://www.youtube.com/embed/VIDEO_ID7">
+          <img src="https://i.imgur.com/u2v0ZlV.jpg" alt="Color grading sample" loading="lazy">
+          <div class="label">Color Grading</div>
+        </a>
+      </div>
+
+      <div class="card" data-category="Anime">
+        <a href="#" class="videoThumb" data-video="https://www.youtube.com/embed/VIDEO_ID8">
+          <img src="https://i.imgur.com/4Z6uH8M.jpg" alt="Anime sample" loading="lazy">
+          <div class="label">Anime Style</div>
+        </a>
+      </div>
+
+      <div class="card" data-category="Ads">
+        <a href="#" class="videoThumb" data-video="https://www.youtube.com/embed/VIDEO_ID9">
+          <img src="https://i.imgur.com/FfX1Q9L.jpg" alt="Ad sample" loading="lazy">
+          <div class="label">Ad — Promo</div>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div id="videoModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="closeModal" class="modal-close" aria-label="Close">×</button>
+      <div class="video-wrap">
+        <iframe id="videoFrame" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer container">
+    <p>&copy; <span id="year2"></span> Editkaro.</p>
+  </footer>
+
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+  <script src="js/portfolio.js" defer></script>
+</body>
+</html>
