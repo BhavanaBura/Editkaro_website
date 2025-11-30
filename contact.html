@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Editkaro</title>
+  <meta name="description" content="Contact Editkaro for video editing & social media services." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="index.html">Editkaro</a>
+      <ul class="nav-links">
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Contact Us</h1>
+    <p>Fill the form and we'll get back to you within 24–48 hours.</p>
+
+    <form id="contactForm" class="contact-form">
+      <label>Name <input type="text" id="name" required></label>
+      <label>Email <input type="email" id="contactEmail" required></label>
+      <label>Phone <input type="tel" id="phone" /></label>
+      <label>Message <textarea id="message" rows="5" required></textarea></label>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <p id="contactMsg" class="status"></p>
+  </main>
+
+  <footer class="site-footer container">
+    <p>&copy; <span id="year4"></span> Editkaro.</p>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
+</body>
+</html>
